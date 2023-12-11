@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Aug 18 17:41:54 2023
+
+@author: gabriel
+"""
+
+import calculator as calc
+
+print("1 - Soma")
+print("\n2 - Subtração")
+print("\n3 - Multiplicação")
+print("\n4 - Divisão")
+print("\n5 - Potência")
+print("\n6 - Radiciação")
+op = 1
+
+while(op>0 and op<7):
+    op = int(input("\nInsira uma das opções do menu: "))
+    if(op==1):
+        calc.sum()
+    elif(op==2):
+        calc.sub()
+    elif(op==3):
+        calc.mult()
+    elif(op==4):
+        calc.div()
+    elif(op==5):
+        calc.pot()
+    elif(op==6):
+        calc.rad()
+    else:
+        print("OPeração cancelada, saindo do programa")
